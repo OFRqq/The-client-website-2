@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The client website</title>
+</head>
+
+<body>
+
+    <header id="header">
+      <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <a href="#"><img class="harry" src="assets/harry_blij.gif"/></a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#" class="a-link">Thema</a></li>
+            <li><a href="#" class="a-link">De Geveltuin</a></li>
+            <li><a href="#" class="a-link">Stekjes & Zaadjes</a></li>
+            <li><a href="#" class="a-link">Partners </a></li>
+            <li><a href="#" class="a-link">Contact</a></li>
+        </ul>
+    </nav>
+      </header>
+
+      <main>
+      <section>
+        <div>
+          <div>
+            <h1>Bieb In Bloei</h1>
+          <h2 class="sub-title">Inspireer & Deel Groene Passie!</h2>
+          <a href="#pagedown"><img class="arrow" src="assets/arrow down.gif"></a>
+          </div>
+        </div>
+      </section>
+      <section id="pagedown">
+        <div>
+          <div>
+            <p>section dos</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div>
+            <p>section tres</p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div>
+          <p>footer</p>
+        </div>
+      </footer>
+</body>
+
+<script>
+  const menuToggle = document.getElementById('mobile-menu');
+const navLinks = document.getElementById('nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active'); // Toggle the "active" class
+});
+</script>
+
+</main>
+</html>
