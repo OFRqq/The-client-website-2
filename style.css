@@ -21,11 +21,34 @@ html {
     line-height: 1.5;
 }
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
+
+        /*select customized*/
+        ::selection {
+            background-color: rgb(204, 255, 206);
+        }
+
+        /* scrollbar width */
+        ::-webkit-scrollbar {
+            width: 3px;
+        } 
+        /* scrollbar Track */
+        ::-webkit-scrollbar-track {
+            box-shadow:rgb(255, 255, 255); 
+            border-radius: 20px;
+        }
+        /* scrollbar Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(0, 0, 0); 
+            border-radius: 20px;
+
+        }
 
 body {
     font-family: Arial, sans-serif;
@@ -34,9 +57,23 @@ body {
     background-attachment: fixed;
     background-size: cover;
     overflow-x:hidden;
+
+    main {
+        display:grid;
+        grid-template-rows: 100vh;
+    }
 }
 
+#headermenu {
+    position: fixed;  /* Zorg ervoor dat de header altijd op dezelfde plek blijft */
+    top: 0;           /* Zorg ervoor dat de header bovenaan het scherm start */
+    left: 0;
+    width: 100%;
+    transition: top 0.5s ease; /* Zorg voor een soepele overgang */
+  }
+  
 nav {
+    
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -90,6 +127,54 @@ ul.nav-links li a {
     transition: 0.4s;
 }
 
+section.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--title-font);
+}
+
+img.arrow {
+    width: 70px;
+}
+
+img.arrow:hover {
+    background-color: rgba(255, 255, 255, 0.571);
+    border-radius: 45px;
+    transition:0.3 ease-in-out;
+}
+
+h2 {
+    font-family: var(--main-font);
+    text-shadow: black 2px 0 0;
+}
+
+h1 {
+animation: resizeText 1s ease-in-out forwards;
+font-family: var(--title-font);
+font-size:5em;
+}
+
+/* Section Stijlen */
+section.project {
+    background-color:var(--main-color-beige);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 45%; /* Zorgt ervoor dat ze naast elkaar passen op grote schermen */
+    color:black;
+}
+
+section.project .content {
+    padding: 10px;
+}
+
+
 /* Mobile Styles */
 @media (max-width: 768px) {
 
@@ -136,4 +221,26 @@ ul.nav-links li a {
         border-radius:none;
         background-color: none;
     }
+
+    section.title {
+        font-size: 1rem;
+    }
+
+    
+    h2 {
+    font-family: var(--main-font);
+    text-shadow: black 2px 0 0;
+    }
+
+    h1 {
+    animation: resizeText 1s ease-in-out forwards;
+    font-family: var(--title-font);
+    font-size:5em;
+    }
+
+    section.project {
+        min-width: 100%; /* Elke section neemt nu de volle breedte */
+        margin-bottom: 20px;
+    }
 }
+
