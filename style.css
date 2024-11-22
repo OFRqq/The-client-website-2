@@ -9,18 +9,21 @@
     --main-color-brown: #491b02;
     --card-color-orange: #ff9a41;
     --card-color-green: #3c593e;
-    --title-font:"Source Code Pro", monospace;
-    --main-font:"Albert Sans", sans-serif;
-    --border-radius:2rem;
+    --title-font:"Poppins-Black", sans-serif;
+    --main-font:'Poppins-Regular', sans-serif;
+    --font-sub-header: 'Poppins-Bold', sans-serif;
+    --font-link: 'Poppins-Regular', sans-serif;
+    --border-radius:2em;
     --section-margin: 0 80px;
+    --image-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%); /* Gebruiken voor schaduw gradient over image heen */
 }
+
 
 html {
     scroll-behavior: smooth;
     font-family: 'Mulish', sans-serif;
     line-height: 1.5;
 }
-
 
 * {
     margin: 0;
@@ -31,7 +34,7 @@ html {
 
         /*select customized*/
         ::selection {
-            background-color: rgb(204, 255, 206);
+            background-color: rgb(79, 126, 99);
         }
 
         /* scrollbar width */
@@ -64,16 +67,7 @@ body {
     }
 }
 
-#headermenu {
-    position: fixed;  /* Zorg ervoor dat de header altijd op dezelfde plek blijft */
-    top: 0;           /* Zorg ervoor dat de header bovenaan het scherm start */
-    left: 0;
-    width: 100%;
-    transition: top 0.5s ease; /* Zorg voor een soepele overgang */
-  }
-  
 nav {
-    
     display: flex;
     justify-content:space-between;
     align-items: center;
