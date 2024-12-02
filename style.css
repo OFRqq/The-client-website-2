@@ -3,16 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
-    --main-color-green: #4e7141;
-    --main-color-beige: #f9e9c2;
-    --main-color-orange: #ff8d06;
-    --main-color-brown: #491b02;
-    --card-color-orange: #ff9a41;
-    --card-color-green: #3c593e;
-    --title-font:"Poppins-Black", sans-serif;
-    --main-font:'Poppins-Regular', sans-serif;
-    --font-sub-header: 'Poppins-Bold', sans-serif;
-    --font-link: 'Poppins-Regular', sans-serif;
     --border-radius:2em;
     --section-margin: 0 80px;
     --image-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%); /* Gebruiken voor schaduw gradient over image heen */
